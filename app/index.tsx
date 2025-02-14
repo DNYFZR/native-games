@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import css from "./_styles";
 
 export default function App() {
@@ -12,9 +12,11 @@ export default function App() {
       </View>
 
       {/* Landing Page */}
-      <Text style={css.heading}>Hello World...</Text>
-      <Text style={css.text}>This is the homepage & such...</Text>
-      
+      <Text style={css.heading}>WILDCARD</Text>
+      <Image 
+        source={require("../assets/arcade.jpg")} 
+        style={css.image}
+      />
     </View>
   );
 }

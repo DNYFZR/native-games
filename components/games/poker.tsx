@@ -352,7 +352,7 @@ const TexasHoldEm: React.FC = () => {
             <View style={css.row}>
               <Text style={css.text}>
                 Dealer : {dealerHand} {"\n"}
-                Strength Rating : {dealerScore.toFixed(1)}
+                Rating : {dealerScore.toFixed(1)}
               </Text>
             </View>
             
@@ -389,7 +389,7 @@ const TexasHoldEm: React.FC = () => {
             <View style={css.row}>
               <Text style={css.text}>
                 Player : {playerHand} {"\n"}
-                Strength Rating : {playerScore.toFixed(1)}
+                Rating : {playerScore.toFixed(1)}
               </Text>
             </View>
           </View>

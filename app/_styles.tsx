@@ -6,6 +6,35 @@ const css = StyleSheet.create({
     backgroundColor: "rgb(0,0,0)",
     alignItems: "center",
   },
+  image: {
+    borderRadius: 12,
+    width:500,
+    height: 500,
+  },
+  heading: {
+    color: "rgb(6, 147, 198)",
+    textAlign: "center",
+    fontWeight: 800,
+    fontSize: 28,
+    padding:10,
+  },
+  text : {
+    color: "rgb(120, 200, 240)",
+    textAlign: "center",
+    fontWeight: 600,
+    fontSize: 18,
+    padding:10,
+  },
+  nav : {
+    backgroundColor: "rgb(20, 137, 209)",
+    borderRadius: 16,
+    padding: 12,
+    margin: 12,
+    textAlign: "center",
+    justifyContent: "center",
+    fontWeight: 600,
+    minWidth: 100,
+  },
   navContainer : {
     flex: 1,
     backgroundColor: "rgb(0,0,0)",
@@ -26,6 +55,7 @@ const css = StyleSheet.create({
     justifyContent: "center",
     alignItems:"center",
   },
+  // Games
   hand : {
     display: "flex",
     flexDirection: "row",
@@ -35,30 +65,6 @@ const css = StyleSheet.create({
     borderRadius: 6,
     height:140,
     width:100,
-  },
-  heading: {
-    color: "rgb(255,255,255)",
-    textAlign: "center",
-    fontWeight: 800,
-    fontSize: 28,
-    padding:10,
-  },
-  text : {
-    color: "rgb(255,255,255)",
-    textAlign: "center",
-    fontWeight: 600,
-    fontSize: 18,
-    padding:10,
-  },
-  nav : {
-    backgroundColor: "rgb(20, 137, 209)",
-    borderRadius: 16,
-    padding: 12,
-    margin: 12,
-    textAlign: "center",
-    justifyContent: "center",
-    fontWeight: 600,
-    minWidth: 100,
   },
 });
 

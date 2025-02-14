@@ -1,7 +1,7 @@
 # Expo React Native GitHub Pages Deployment
 name: Build
 on:
-  pull_request:
+  push:
     branches: ['main']
   
 permissions:

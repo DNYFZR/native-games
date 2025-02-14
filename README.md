@@ -1,6 +1,6 @@
-<h2 align="center">Native Wildcard</h2>
+<h2 align="center">Native Games</h2>
 
-Testing out React Native using Expo with the blackjack & poker components in my wildcard app...
+React Native blackjack & poker app built with Expo
 
 ### Deployment notes
 
@@ -9,7 +9,7 @@ Testing out React Native using Expo with the blackjack & poker components in my 
 ```json
 "experiments": {
     "typedRoutes": true,
-    "baseUrl": "/ts-native-wildcard"
+    "baseUrl": "/native-games"
   }
 
 ```
@@ -18,13 +18,6 @@ Testing out React Native using Expo with the blackjack & poker components in my 
 
 ```json
 "build": "expo export -p web"
-
-```
-
-- added web deploy command to package.json scripts
-
-```json
-"deploy": "gh-pages --nojekyll -d dist"
 
 ```
 

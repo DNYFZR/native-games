@@ -21,4 +21,11 @@ Testing out React Native using Expo with the blackjack & poker components in my 
 
 ```
 
+- added web deploy command to package.json scripts
+
+```json
+"deploy": "gh-pages --nojekyll -d dist"
+
+```
+
 - configured .github/workflows/build.yml

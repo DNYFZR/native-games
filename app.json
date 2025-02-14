@@ -2,7 +2,7 @@
   "expo": {
     "name": "wildcard",
     "slug": "/",
-    "version": "0.2.1",
+    "version": "0.3.2",
     "orientation": "portrait",
     "icon": "./assets/chip.png",
     "scheme": "myapp",
@@ -36,7 +36,7 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "baseUrl": "/ts-native-wildcard"
+      "baseUrl": "/native-games"
     }
   }
 }

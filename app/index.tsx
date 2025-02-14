@@ -12,7 +12,7 @@ export default function App() {
       </View>
 
       {/* Landing Page */}
-      <Text style={css.heading}>WILDCARD</Text>
+      <Text style={css.heading}>NATIVE GAMES</Text>
       <Image 
         source={require("../assets/arcade.jpg")} 
         style={css.image}

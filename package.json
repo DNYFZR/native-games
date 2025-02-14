@@ -1,7 +1,7 @@
 {
   "name": "wildcard",
   "main": "expo-router/entry",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -10,8 +10,7 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "build": "expo export -p web",
-    "deploy": "gh-pages --nojekyll -d dist"
+    "build": "expo export -p web"
   },
   "jest": {
     "preset": "jest-expo"

@@ -1,4 +1,4 @@
-import css from '../app/_styles';
+import css from './styles';
 import { useState, useEffect } from 'react'
 import { GestureResponderEvent, View, Text } from 'react-native';
 import Button from '@/components/Button';
@@ -28,7 +28,7 @@ export default function Loading() {
   return (
     <View>
       <View>
-        <Button name={name} style={css.nav} onPress={(e) => initScan(e)} />      
+        <Button name={name} style={css.button} onPress={(e) => initScan(e)} />      
       </View>
       
       <View>

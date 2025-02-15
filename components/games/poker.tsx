@@ -1,5 +1,5 @@
 // Poker Minigame Component
-import css from '@/app/_styles';
+import css from '@/components/styles';
 import { View, Text, FlatList,  Image } from 'react-native';
 import React, { useState } from 'react';
 import Button from '../Button';
@@ -340,22 +340,19 @@ const TexasHoldEm: React.FC = () => {
   return (
     <View style={css.col}>     
       <View style={css.row}>
-        <Button style={css.nav} onPress={clickNewGame} name="New Game" />
-        {activeGame ? <Button style={css.nav} onPress={clickCheck} name="Check" /> : null}
+        <Button style={css.button} onPress={clickNewGame} name="New Game" />
+        {activeGame ? <Button style={css.button} onPress={clickCheck} name="Check" /> : null}
       </View>
 
       {dealerCards && dealerCards.cards.length > 0 ?
         <View style={css.col}>
           {winningPlayer === "House Wins" ? <Text style={css.text}> {celebration}</Text> : null}
           
-          <View style={css.col}>
-            <View style={css.row}>
-              <Text style={css.text}>
-                Dealer : {dealerHand} {"\n"}
-                Rating : {dealerScore.toFixed(1)}
-              </Text>
-            </View>
-            
+          <View style={css.row}>
+            <Text style={css.text}>
+              Dealer {"\n"} {dealerHand} ({dealerScore.toFixed(1)})
+            </Text>
+          
             <FlatList 
               numColumns={5}
               data={dealerCards.cards} 
@@ -379,19 +376,17 @@ const TexasHoldEm: React.FC = () => {
         
       {playerCards && playerCards.cards.length > 0 ?
         <View style={css.col}>
-          <View style={css.col}>
+          <View style={css.row}>
+            <Text style={css.text}>
+              Player {"\n"} {playerHand} ({playerScore.toFixed(1)})
+            </Text>
+
             <FlatList 
               numColumns={5}
               data={playerCards.cards} 
               renderItem={({item}) => <Image style={css.card} source={{uri: item.image}}/>}
             />
             
-            <View style={css.row}>
-              <Text style={css.text}>
-                Player : {playerHand} {"\n"}
-                Rating : {playerScore.toFixed(1)}
-              </Text>
-            </View>
           </View>
           {winningPlayer === "Player Wins" ? <Text style={css.text}>{celebration}</Text> : null}
         </View>

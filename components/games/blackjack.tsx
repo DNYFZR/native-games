@@ -1,4 +1,4 @@
-import css from '@/app/_styles';
+import css from '@/components/styles';
 import React, { useState } from 'react';
 import { View, Image, Text, FlatList } from 'react-native';
 import Button from '../Button';
@@ -156,9 +156,9 @@ const Blackjack: React.FC = () => {
   return (
     <View>      
       <View style={css.row}>
-        <Button style={css.nav} onPress={clickNewGame} name="New Game"/>
-        {activeGame ? <Button style={css.nav} onPress={clickHit} name="Hit Me"/> : null}
-        {activeGame ? <Button style={css.nav} onPress={clickStick} name="Stick" /> : null}
+        <Button style={css.button} onPress={clickNewGame} name="New Game"/>
+        {activeGame ? <Button style={css.button} onPress={clickHit} name="Hit Me"/> : null}
+        {activeGame ? <Button style={css.button} onPress={clickStick} name="Stick" /> : null}
       </View>
 
       <View style={css.col}>

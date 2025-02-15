@@ -4,7 +4,21 @@ const css = StyleSheet.create({
   container : {
     flex: 1,
     backgroundColor: "rgb(0,0,0)",
+  },
+  app : {
+    flex: 1,
+    backgroundColor: "rgb(0,0,0)",
     alignItems: "center",
+  },
+  navbar : {
+    backgroundColor: "rgb(20, 130, 200)",
+    flex:1,
+    flexDirection: "row",
+    alignItems: "center",
+    position: "fixed",
+    bottom: 0,
+    width:"100%",
+    justifyContent:"space-evenly"
   },
   image: {
     borderRadius: 12,
@@ -12,34 +26,28 @@ const css = StyleSheet.create({
     height: "60%",
   },
   heading: {
-    color: "rgb(6, 147, 198)",
+    color: "rgb(6, 140, 200)",
     textAlign: "center",
     fontWeight: 800,
-    fontSize: 28,
-    padding:10,
+    fontSize: 24,
+    padding:2,
   },
   text : {
     color: "rgb(120, 200, 240)",
     textAlign: "center",
     fontWeight: 600,
-    fontSize: 18,
-    padding:10,
+    fontSize: 16,
+    padding:4,
   },
-  nav : {
-    backgroundColor: "rgb(20, 137, 209)",
+  button : {
+    backgroundColor: "rgb(20, 130, 200)",
     borderRadius: 16,
-    padding: 12,
-    margin: 12,
+    padding: 10,
+    margin: 2,
     textAlign: "center",
     justifyContent: "center",
     fontWeight: 600,
     minWidth: 100,
-  },
-  navContainer : {
-    backgroundColor: "rgb(0,0,0)",
-    alignItems: "center",
-    position: "fixed",
-    left: 0,
   },
   row : {
     display: "flex",
@@ -54,19 +62,13 @@ const css = StyleSheet.create({
     justifyContent: "center",
     alignItems:"center",
   },
-  // Games
-  hand : {
-    display: "flex",
-    flexDirection: "row",
-    maxWidth:"100%",
-    maxHeight: "100%",
-  },
   card: {
     margin: 8,
     borderRadius: 6,
-    height:100,
-    width:75,
+    height:120,
+    width:85,
   },
 });
+
 
 export default css;

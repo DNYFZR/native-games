@@ -8,8 +8,8 @@ const css = StyleSheet.create({
   },
   image: {
     borderRadius: 12,
-    width:500,
-    height: 500,
+    width:"60%",
+    height: "60%",
   },
   heading: {
     color: "rgb(6, 147, 198)",
@@ -36,7 +36,6 @@ const css = StyleSheet.create({
     minWidth: 100,
   },
   navContainer : {
-    flex: 1,
     backgroundColor: "rgb(0,0,0)",
     alignItems: "center",
     position: "fixed",
@@ -59,12 +58,14 @@ const css = StyleSheet.create({
   hand : {
     display: "flex",
     flexDirection: "row",
+    maxWidth:"100%",
+    maxHeight: "100%",
   },
   card: {
     margin: 8,
     borderRadius: 6,
-    height:140,
-    width:100,
+    height:100,
+    width:75,
   },
 });
 

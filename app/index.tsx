@@ -33,10 +33,10 @@ export default function App() {
       </View>
 
       <View style={css.navbar}>
-        <Link style={css.button} href="/" onPress={() => setActiveContent("")}>Home</Link>
-        <Button name="Info" style={css.button} onPress={( _ ) => setActiveContent("info")} />
-        <Button name="Blackjack" style={css.button} onPress={( _ ) => setActiveContent("blackjack")} />
-        <Button name="Poker" style={css.button} onPress={( _ ) => setActiveContent("poker")} />  
+        <Link style={activeContent === ""? css.navButton : css.button} href="/" onPress={() => setActiveContent("")}>Home</Link>
+        <Button name="Info" style={activeContent === "info"? css.navButton : css.button} onPress={( _ ) => setActiveContent("info")} />
+        <Button name="Blackjack" style={activeContent === "blackjack"? css.navButton : css.button} onPress={( _ ) => setActiveContent("blackjack")} />
+        <Button name="Poker" style={activeContent === "poker"? css.navButton : css.button} onPress={( _ ) => setActiveContent("poker")} />  
       </View>
 
     </View>
